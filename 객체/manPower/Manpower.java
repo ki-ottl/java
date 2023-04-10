@@ -2,19 +2,6 @@ import java.util.Scanner;
 
 public class Manpower {
 	
-//	인력 관리 프로그램을 작성하시오
-//
-//	각 인원은 이름, 주소, 성별을 입력 받음. 
-//	주소는 서울, 경기, 강원, 충청, 전라, 경상 (6개만 사용)
-//	이런식으로 가장 큰 지역 이름만 입력
-	
-//	step1. 10명의 데이터를 입력 받아서 위 내용 구현
-//	입력된 데이터는 전체 출력, 지역별 인구 수 출력, 성별 인구 수 출력
-//
-//	숙제는 다음 스탭대로 진행하세요.
-//	step1. 10명의 데이터를 입력 받아서 위 내용 구현
-//	step2. 다음 사항으로 개선
-//	1. 주소는 문자열 입력이 아닌 메뉴에서 선택해서 입력할 수 있게 하세요. (오입력 방지)
 
 	String name;
 	int address;
@@ -26,8 +13,7 @@ public class Manpower {
 	int female = 0;
 	
 	int addresscount;
-	
-	
+		
 	public void name() {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("이름을 입력해주세요");
