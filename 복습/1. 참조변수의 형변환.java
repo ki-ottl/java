@@ -17,7 +17,8 @@ public class Ex7_7 { // 참조변수의 형변환
 //		 FireEngine fe = (FireEngine) c;
 //		 fe.water();  // 컴파일은 되지만,
 //		 	      // 실행 시 형변환 실행 에러 (java.lang.ClassCastException)가 생긴다.
-			      // 실제 c는 Car 객체이기 때문. 실제 가리키는 객체가 무엇인지 파악하는 것이 중요하다.
+			      // 실제 c는 Car 객체이기 때문.
+			      // 참조변수가 실제 가리키는 인스턴스가 무엇인지 파악하는 것이 중요하다.
 		
 	}
 
