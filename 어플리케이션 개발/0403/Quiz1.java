@@ -33,11 +33,10 @@ public class Quiz1 {
 		
 		int tmp;
 		String tmpForName;
-
 		
 		for(int i = 0 ; i<sort.length ; i++) {
-			for (int j = 0; j < total.length; j++) {
-				if (sort[i]>sort[j]) {
+			for (int j = i+1; j < sort.length; j++) {
+				if (sort[i]<sort[j]) {
 					tmp = sort[i];
 					sort[i] = sort[j];
 					sort[j] = tmp;
