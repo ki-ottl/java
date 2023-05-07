@@ -54,7 +54,7 @@ class Solution { // 참고용
         long n = num; // int 범위를 넘을 수 있기 때문에 long으로 선언
         while (n != 1) { // n이 1이 되기 전까지 반복
             if (n % 2 == 0) { // 짝수인 경우
-                n /= 2;
+                n = n / 2;
             } else { // 홀수인 경우
                 n = n * 3 + 1;
             }
