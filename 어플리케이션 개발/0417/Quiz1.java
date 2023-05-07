@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Quiz1 {
+public class D0417Q1 {
 	
 	public static void main(String[] args) {
 	
@@ -23,42 +23,19 @@ public class Quiz1 {
 	public static int solution(int start, int n) {
 
 		int[] arr = new int[n];
-
-		int sum = 2;
-
-		for (int i = 0; i < n; i++) {
-			arr[i] = sum + i;
+		
+		for (int i = 0 ; i < arr.length ; i++) {
+			arr[i] = start + i;
 		}
-
+		
 		int answer = 0;
-
-		for (int i = 0; i < arr.length; i++) {
-			answer = answer + arr[i];
+		
+		for (int i = 0 ; i < arr.length ; i++) {
+			answer = arr[i] + answer;
 		}
-
+		
 		return answer;
 	}
 
 }
-
-
-
-//int start = 2;
-//int n = 5;
-//
-//int[] arr = new int[n];
-//
-//int sum = 2;
-//
-//for (int i = 0; i < n; i++) {
-//	arr[i] = sum + i;
-//}
-//
-//int answer = 0;
-//
-//for (int i = 0; i < arr.length; i++) {
-//	answer = answer + arr[i];
-//}
-//
-//System.out.println(answer);
 
