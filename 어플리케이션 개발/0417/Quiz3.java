@@ -1,6 +1,8 @@
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
-public class Quiz3 {
+public class D0417Q3 {
 
 	public static void main(String[] args) {
 
@@ -21,38 +23,49 @@ public class Quiz3 {
 //				출력예시 : 2
 
 //	}
-		
+
 		int[] arr = { 1, 1, 2, 2, 4, 4 };
 		int n = 1;
-				
+
 		System.out.println(solution(arr, n));
-		
 
 	}
 
 	public static int solution(int[] array, int n) {
 
+		Arrays.sort(array);
+
+		for (int i = 0; i < array.length; i++) {
+			for (int j = i + 1; j < array.length; j++) {
+				if (array[i] == array[j]) {
+					array[i] = -1;
+				}
+			}
+		}
+
 		int answer = 0;
-		int[] cnt = new int[array.length];
-		
+
 		for (int i = 0; i < array.length; i++) {
-			for (int j = 1 ; j < array.length ; j++) {
-				if (array[i]==array[j]) {
-					cnt[array[i]]++;
-				}
+			if (array[i] != n && -1 < array[i]) {
+				answer++;
 			}
 		}
-		
-		for (int i = 0; i < array.length; i++) {
-			if (i != n) { 
-				if (cnt[i] > 2) {
-					answer++;
-				} else if (cnt[i] == 1 ) {
-					answer++;
-				}
-			}
-		}
-			
+
 		return answer;
+	}
+
+}
+
+// 참고
+
+class Solution {
+	public int solution(int[] array, int n) {
+		Set<Integer> set = new HashSet<>();
+		for (int num : array) {
+			if (num != n) {
+				set.add(num);
+			}
+		}
+		return set.size();
 	}
 }
