@@ -58,6 +58,7 @@ public class D0417Q3 {
 
 // 참고
 
+<<<<<<< HEAD
 class Solution {
 	public int solution(int[] array, int n) {
 		Set<Integer> set = new HashSet<>();
@@ -69,3 +70,19 @@ class Solution {
 		return set.size();
 	}
 }
+=======
+import java.util.HashSet;
+import java.util.Set;
+
+class Solution {
+    public int solution(int[] array, int n) {
+        Set<Integer> set = new HashSet<>();
+        for (int num : array) {
+            if (num != n) {
+                set.add(num);
+            }
+        }
+        return set.size();
+    }
+}
+>>>>>>> deded9c36f61567095c12d0fd243a33ed60d31e7
