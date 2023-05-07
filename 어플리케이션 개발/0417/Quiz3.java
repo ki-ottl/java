@@ -56,3 +56,20 @@ public class Quiz3 {
 		return answer;
 	}
 }
+
+// 참고
+
+import java.util.HashSet;
+import java.util.Set;
+
+class Solution {
+    public int solution(int[] array, int n) {
+        Set<Integer> set = new HashSet<>();
+        for (int num : array) {
+            if (num != n) {
+                set.add(num);
+            }
+        }
+        return set.size();
+    }
+}
