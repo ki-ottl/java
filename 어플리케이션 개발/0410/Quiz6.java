@@ -27,7 +27,7 @@ public class D0410Q6 {
         // 2차원 배열의 크기를 입력 받음
         int n = sc.nextInt();
         int m = sc.nextInt();
-        // 1부터 n, m까지의 크기를 갖는 2차원 배열을 생성
+        // n+1, m+1까지의 크기를 갖는 2차원 배열을 생성
         int[][] arr = new int[n + 1][m + 1];
 
         // 배열에 값을 입력 받음
