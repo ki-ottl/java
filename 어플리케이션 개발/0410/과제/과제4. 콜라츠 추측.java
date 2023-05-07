@@ -47,46 +47,25 @@ public class Quiz5 {
 		System.out.println(answer);
 	}
 	
-		// 제출용
 		
-//		class Solution {
-//			
-//		    public int solution(double num) {
-//		        
-//				int count = 0;
-//				
-//				for (int i = 0 ; i < 9999 ; i++) {
-//					if (num==1) {
-//						count=0;
-//						break;
-//					} else if (num%2==0) {
-//						num = num / 2.0 ;
-//						count++;
-//						if (num==1) {
-//							break;
-//						}
-//					} else if (num%2==1) {
-//						num = num * 3.0 + 1;
-//						count++;
-//						if (num==1) {
-//							break;
-//						}
-//					}
-//				}
-//				
-//				if (count>=500) {
-//					count = -1;
-//				}
-//				
-//				int answer = count;
-//	            
-//	            return answer;
-//		    }
-//		}
-	
-	
-	
-	
-	
+class Solution { // 참고용
+    public int solution(int num) {
+        int count = 0;
+        long n = num; // int 범위를 넘을 수 있기 때문에 long으로 선언
+        while (n != 1) { // n이 1이 되기 전까지 반복
+            if (n % 2 == 0) { // 짝수인 경우
+                n /= 2;
+            } else { // 홀수인 경우
+                n = n * 3 + 1;
+            }
+            count++; // 작업 횟수 증가
+            if (count == 500) { // 500번 이상 작업한 경우
+                return -1; // -1 반환
+            }
+        }
+        return count;
+    }
+}
+
 
 }
