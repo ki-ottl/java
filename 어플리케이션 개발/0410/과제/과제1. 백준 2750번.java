@@ -4,14 +4,27 @@ import java.util.Scanner;
 
 public class Quiz1 {
 
-	public static void main(String[] args) throws Exception {
-		System.setIn(new FileInputStream("src/inputDC.txt"));
-		Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) {
 
 //		첫째 줄에 수의 개수 N(1 ≤ N ≤ 1,000)이 주어진다. 
 //		둘째 줄부터 N개의 줄에는 수가 주어진다. 
 //		이 수는 절댓값이 1,000보다 작거나 같은 정수이다. 
 //		수는 중복되지 않는다.
+		
+//		입력값 
+//		5
+//		5
+//		2
+//		3
+//		4
+//		1
+//		
+//		출력값
+//		1
+//		2
+//		3
+//		4
+//		5
 
 		int N;
 		N = sc.nextInt();
