@@ -23,24 +23,18 @@ public class Quiz4 {
 
 		System.out.println(answer);
 		
-// 제출 내용
-		
+// 참고	
 //		class Solution {
-//		    public long solution(double n) {
-//		    	
-//				double inputNum = Math.sqrt(n);
-//
-//				int answer = 0;
-//
-//				if (Math.floor(inputNum) * Math.floor(inputNum) ==  Math.floor(n)) {
-//					answer = (int) Math.pow(inputNum + 1, 2);
-//				} else {
-//					answer = -1;
-//				}
-//		
-//				return answer;
+//		    public long solution(long n) {
+//		        long answer = -1;
+//		        double root = Math.sqrt(n); // n의 제곱근을 계산
+//		        if(root == (int)root) { // n의 제곱근이 정수인지 확인
+//		            answer = (long)Math.pow(root + 1, 2); // 정수면 (루트 n + 1)을 제곱한 값을 리턴
+//		        }
+//		        return answer;
 //		    }
 //		}
+//		
 		
 		
 	}
