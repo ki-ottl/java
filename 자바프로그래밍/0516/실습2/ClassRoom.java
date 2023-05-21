@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ClassRoom {
 	String name;
-	ArrayList<Student> students = new ArrayList<Student>();
+	ArrayList<Student> innerStudents = new ArrayList<Student>();
 	
 	ClassRoom() {
 		
@@ -14,6 +14,6 @@ public class ClassRoom {
 	
 	@Override
 	public String toString() {
-		return this.name + " (" + this.students.size() + "명)";
+		return this.name + " (" + this.innerStudents.size() + "명)";
 	}
 }
