@@ -18,7 +18,7 @@ class Ex11_1 {
 		print(list1, list2);
 
 		System.out.println("list1.containsAll(list2):"
-                                               + list1.containsAll(list2));
+                                               + list1.containsAll(list2));	// list1이 list2의 모든 요소를 포함하고 있을 때만 true
 
 		list2.add("B");
 		list2.add("C");
