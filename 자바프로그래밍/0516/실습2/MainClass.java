@@ -53,6 +53,9 @@ public class MainClass {
 				ClassRoom sClassRoom = classRoom.get(selectClassRoomNumber);
 				Student sStudent = student[selectStudentNumber];
 				sClassRoom.students.add(sStudent);
+				
+				// classRoom.get(selectClassRoomNumber).students.add(student[selectStudentNumber]);
+				
 			} else if (selectMenu.equals("q")) {
 				break;
 			}
